@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riverdale University</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">
+          <div class="logo-mark">
+            <img
+              src="images/cb160eae-1596-491f-b6d9-1e573944ef1e.png"
+              alt="Riverdale University logo"
+            />
+          </div>
+          <span>Riverdale University</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+        <nav>
+          <ul>
+            <li><a class="active-page" href="index.html">Home</a></li>
+            <li><a href="login.html">Login Form</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <input
+            type="search"
+            class="nav-search-input"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <a class="nav-account" href="login.html" aria-label="My account">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" id="home">
+      <section class="hero hero-bg-home">
+        <div>
+          <p class="hero-badge">Welcome to Riverdale University</p>
+          <h1>Learn, Grow, and Achieve with a modern school experience.</h1>
+          <p>
+            Discover a friendly campus with student-focused programs, engaging
+            news, and a supportive online portal for parents, students, and
+            staff.
+          </p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="login.html">Student Login</a>
+            <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">What We Offer</div>
+        <div class="cards">
+          <article class="card bg-11 bg-img">
+            <h3>Quality Education</h3>
+            <p>
+              Our curriculum blends academics, creativity, and practical
+              learning for younger learners and future leaders.
+            </p>
+          </article>
+          <article class="card bg-2 bg-img">
+            <h3>Student Services</h3>
+            <p>
+              Support services include counseling, activity clubs, and
+              performance tracking to keep every student on the right path.
+            </p>
+          </article>
+          <article class="card bg-3 bg-img">
+            <h3>Community Events</h3>
+            <p>
+              School fairs, science exhibitions, and cultural programs bring
+              families together around student success.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid-2" id="login">
+        <div>
+          <div class="section-title">Login Form</div>
+          <p>
+            Use your student or staff credentials to access the school portal,
+            view announcements, and manage your schedule.
+          </p>
+          <div class="login-card">
+            <form>
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="student@school.com"
+                required
+              />
+
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+
+              <button class="btn btn-primary" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <aside>
+          <div class="section-title">Latest News</div>
+          <div class="news-list" id="news">
+            <article class="news-item">
+              <time datetime="2026-08-08">Aug 8, 2026</time>
+              <h4>Science Fair Winners Announced</h4>
+              <p>
+                Congratulations to our students for winning awards in robotics
+                and environmental research.
+              </p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-07-30">Jul 30, 2026</time>
+              <h4>Summer Enrichment Program</h4>
+              <p>
+                New workshops released for coding, art, and leadership
+                development next semester.
+              </p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section>
+        <div class="section-title">School Gallery</div>
+        <p>
+          Explore moments from campus life, extracurricular projects, and school
+          celebrations.
+        </p>
+        <div class="gallery-grid" id="gallery">
+          <div class="gallery-card hero1"><span>Sports Day</span></div>
+          <div class="gallery-card hero2"><span>Art Exhibition</span></div>
+          <div class="gallery-card hero3"><span>Science Lab</span></div>
+          <div class="gallery-card hero4"><span>Student Awards</span></div>
+          <div class="gallery-card hero5"><span>Club Fair</span></div>
+          <div class="gallery-card hero6"><span>Campus Life</span></div>
+        </div>
+      </section>
+
+      <section class="contact-card" id="contact">
+        <div class="section-title">Contact Us</div>
+        <p>
+          Have questions about registration, admissions, or the school calendar?
+          Send us a message and we will respond promptly.
+        </p>
+        <form id="contact-form">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+
+          <label for="contact-email">Email</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your question or feedback"
+          ></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo">
+            <span class="logo-mark"
+              ><img
+                src="images/cb160eae-1596-491f-b6d9-1e573944ef1e.png"
+                alt="Riverdale University logo"
+            /></span>
+            Riverdale University
+          </span>
+          <p>
+            Helping students learn, grow, and succeed with a welcoming school
+            community.
+          </p>
+          <div class="footer-newsletter">
+            <p>
+              Get the latest school news, events, and announcements straight to
+              your inbox.
+            </p>
+            <a href="contact.html" class="btn btn-secondary">Subscribe</a>
+          </div>
+          <div class="footer-social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Login</a>
+        </div>
+        <div class="footer-contact">
+          <span>123 School Road, City</span>
+          <span>(555) 123-4567</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
